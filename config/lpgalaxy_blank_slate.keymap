@@ -9,9 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#include "macros.dtsi"
-#include "combos.dtsi"
-
 #define QWE_L 0
 #define NUM_L 1
 #define SYM_L 2
@@ -22,6 +19,9 @@
 #define U_RDO LS(LG(Z))
 
 #define BT(n) BT_SEL n
+
+#include "macros.dtsi"
+#include "combos.dtsi"
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
